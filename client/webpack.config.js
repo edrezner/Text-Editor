@@ -22,6 +22,25 @@ module.exports = () => {
         template: "./index.html",
         title: "Webpack Plugin",
       }),
+      new WebpackPwaManifest({
+        name: "Just Another Text Editor",
+        short_name: "JATE",
+        description: "Edit all the text!",
+        background_color: "#ffffff",
+        theme_color: "#000000",
+        start_url: "./",
+        publicPath: "./",
+        icons: [
+          {
+            src: path.resolve("assets/images/logo.png"),
+            sizes: [96, 128, 192, 256, 384, 512],
+            destination: path.join("assets", "icons"),
+          },
+        ],
+      }),
+      new InjectManifest({
+        swSrc: "./src/src-sw.js",
+      }),
       new MiniCssExtractPlugin(),
     ],
 
