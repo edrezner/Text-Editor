@@ -26,9 +26,10 @@ warmStrategyCache({
 
 registerRoute(({ request }) => request.mode === "navigate", pageCache);
 
+// [1,2,3].includes(2)
 // TODO: Implement asset caching
 registerRoute(
-  ({ request }) => request.destination === "image",
+  ({ request }) => ["images", "css", "js"].includes(request.destination),
   new CacheFirst({
     cacheName: "my-image-cache",
     plugins: [
@@ -43,6 +44,6 @@ registerRoute(
   })
 );
 
-offlineFallback({
-  pageFallback: "/offline.html",
-});
+// offlineFallback({
+//   pageFallback: "/offline.html",
+// });
