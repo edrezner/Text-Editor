@@ -6,7 +6,7 @@ This app is a text editor that includes a service worker and IndexedDB is used f
 
 The editor can be modified and will retain the data in subsequent visits.
 
-Application Site, Repo and Preview Image:
+Application Site and Preview Image:
 
 [Website](https://end-jate-57bb7eea1802.herokuapp.com/)
 
