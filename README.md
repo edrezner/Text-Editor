@@ -8,13 +8,17 @@ The editor can be modified and will retain the data in subsequent visits.
 
 Application Site, Repo and Preview Image:
 
-[Website]()
+[Website](https://end-jate-57bb7eea1802.herokuapp.com/)
 
-[GitHub Repo](https://github.com/edrezner/Social-Network-API)
+[GitHub Repo](https://github.com/edrezner/Text-Editor)
 
-![Preview Image]()
+![Preview Image](./client/src/images/preview.png)
 
 ## Usage
+
+Upon loading site the logo is visible. Notes and text can be entered and will be stored via IndexedDB that can be accessed on the Application tab.
+
+Also within the Application tab the service worker can be viewed, unregistered, etc.
 
 ## Contributors
 
