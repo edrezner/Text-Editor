@@ -10,8 +10,6 @@ Application Site, Repo and Preview Image:
 
 [Website](https://end-jate-57bb7eea1802.herokuapp.com/)
 
-[GitHub Repo](https://github.com/edrezner/Text-Editor)
-
 ![Preview Image](./client/src/images/preview.png)
 
 ## Usage
